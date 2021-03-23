@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const port = 8080;
-// app.register('.html', require('jade'));
 require('./app/routes')(app,{});
 
 
