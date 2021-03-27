@@ -7,9 +7,13 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.json());
+app.set('view engine','ejs')
 
+app.get('/', function(req, res) {
+    res.render("index");
+});
 
-mangoose.connect(
+mongoose.connect(
     process.env.DB_CONNECTION,
     { useUnifiedTopology: true },
     () =>{
