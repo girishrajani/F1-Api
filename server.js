@@ -23,7 +23,7 @@ app.get('/', function(req, res) {
 
 mongoose.connect(
     process.env.DB_CONNECTION,
-    { useUnifiedTopology: true },
+    { useUnifiedTopology: true ,   useNewUrlParser: true },
     () =>{
         console.log('DB CONNECTED')
         app.listen(port,() => {
