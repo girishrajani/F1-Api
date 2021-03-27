@@ -14,32 +14,29 @@ router.get('/', async (req,res) => {
     }
 })
 
+router.get('/:year', async (req,res) => {
+    // res.send('Drivers Champhionship')
+    try{
+        const DriverData = await Drivers.collection.findOne({'year': req.params.year});
+        res.json(DriverData);
+    }catch(e){
+        res.json({message: '404'});
+    }
+})
+
 router.post('/', async (req,res) => {
     const DriverData = new Drivers({
         year: req.body.year,
         driverName: req.body.driverName,
         teamName: req.body.teamName
     });
-    // try{
-    //     const savedData = await DriverData.save();
-    //     console.log(savedData)
-    //     res.json(savedData);
-    // }catch(e){
-    //     res,json({message:e});
-    // }
-    DriverData.save()
-        .then(data => {
-            console.log(data)
-            res.json(data);
-        })
-        .catch(err => {
-            console.log(err)
-            res.json({message:err})
-        })
+    try{
+        const savedData = await DriverData.save();
+        console.log(savedData)
+        res.json(savedData);
+    }catch(e){
+        res,json({message:e});
+    }
     
 });
-// router.post('/', (req,res) => {
-//     console.log(req.body.driverName)
-//     res.send(req.body)
-// })
 module.exports = router;
