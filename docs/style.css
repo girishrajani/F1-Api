@@ -7,4 +7,13 @@ h1{
     padding: 10px;
     background-color: red;
     color: white;
-    }
+}
+a{
+  color: red;
+}
+
+code{
+  text-align: center;
+  background-color: pink;
+  height: max-content;
+}
