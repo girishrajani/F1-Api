@@ -32,3 +32,29 @@ Output:
 }
 ```
 
+## ConstructorsChampionship:
+
+-To get all the Constructor's Championships
+```
+http://3.138.85.199:8080/team-championships
+```
+
+-To get Constructor's Championships of a Particular Year
+```
+http://3.138.85.199:8080/team-championships/year
+```
+Example:
+```
+http://3.138.85.199:8080/team-championships/2020
+
+Output:
+{
+    "_id":"6062289870ac6d26fc05bb4d",
+    "year":"2020",
+    "teamName":"Mercedes",
+    "driver1Name":"Lewis Hamilton",
+    "driver2Name":"Valtteri Bottas",
+    "__v":0
+}
+```
+
