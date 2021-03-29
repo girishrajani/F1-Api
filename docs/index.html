@@ -10,22 +10,81 @@
     <body>
         <div class = "header">
             <center>
-                <h1>
+                <h1 class='title'>
                     F1-API
                 </h1>
+                <div>
+                    <h2>Open-Source Informational API for all the Motorsports Fans out there</h2>
+                </div>
             </center>
         </div>
         <br> <br>
-        <div>
-            <h2>Open-Source Informational API for all the Motorsports Fans out there</h2>
+        <center>  
+            <div class="data">
+                <h2 class="apiTitle">API End-Points:</h2>
+                <h3>
+                    <a href="#driverschampionships">
+                        DriversChampionships
+                    </a>
+                </h3>
+                <h3>
+                    <a href="#constructorschampionships">
+                        ConstructorsChampionships
+                    </a>
+                </h3>
+                <br>
+                <h2 id="driverschampionships">DriversChampionships:</h2>
+                <h3>-To get all the Driver's Championships</h3>
+                <a href="http://3.138.85.199:8080/drivers-championships" target="_blank">
+                    <pre><code>http://3.138.85.199:8080/drivers-championships</code></pre>
+                </a>
+                <h3>-To get Driver's Championships of a Particular Year</h3>
+                <pre><code>http://3.138.85.199:8080/drivers-championships/year</code></pre>
+                <div class="inside">
+                    <p>Example:</p>
+                    <a href="http://3.138.85.199:8080/drivers-championships/2020" target="_blank">
+                        <pre><code>http://3.138.85.199:8080/drivers-championships/2020</code></pre>
+                    </a>
+                    <p>Output:</p>
+                    <pre>
+                        
+    {
+        &quot;_id&quot;:&quot;605fb6b4e28f85077c343186&quot;,
+        &quot;year&quot;:&quot;2020&quot;,
+        &quot;driverName&quot;:&quot;Lewis Hamilton&quot;,
+        &quot;teamName&quot;:&quot;Mercedes&quot;,
+        &quot;__v&quot;:0
+    }
+                    </pre>
+            </div>
+        <br>
+            <h2 id="constructorschampionships">ConstructorsChampionships:</h2>
+            <h3>-To get all the Constructor's Championships</h3>
+            <a href="http://3.138.85.199:8080/team-championships" target="_blank">
+                <pre><code>http://3.138.85.199:8080/team-championships</code></pre>
+            </a>
+            <h3>-To get Constructor's Championships of a Particular Year</h3>
+            <pre><code>http://3.138.85.199:8080/team-championships/year</code></pre>
+            <div class="inside">
+                <p>Example:</p>
+                <a href="http://3.138.85.199:8080/team-championships/2020" target="_blank">
+                    <pre><code>http://3.138.85.199:8080/team-championships/2020</code></pre>
+                </a>
+                <p>Output:</p>
+                <pre>
+                    
+    {
+        "_id":"6062289870ac6d26fc05bb4d",
+        "year":"2020",
+        "teamName":"Mercedes",
+        "driver1Name":"Lewis Hamilton",
+        "driver2Name":"Valtteri Bottas",
+        "__v":0
+    }
+                </pre>
         </div>
-        <div>
-            <h4>
-                Endpoints:
-            </h4>
-        </div>
-        <div>
-            <a href="drivers-championship.html">DriversChampionship</a>
-        </div>
+</div>
+        </center>
+
     </body>
 </html>

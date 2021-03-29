@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
-h1{
-    font-family: 'Roboto', sans-serif;
+.title{
+  font-family: 'Roboto', sans-serif;
   }
 .header{
     padding: 10px;
@@ -11,9 +11,27 @@ h1{
 a{
   color: red;
 }
-
 code{
-  text-align: center;
-  background-color: pink;
+  text-align: left;
+  background-color: palevioletred;
+  color: white;
   height: max-content;
+  /* padding: 15px; */
+  /* display: block;
+  white-space: pre-wrap    */
+}
+pre{
+  background-color: palevioletred;
+  color: white;   
+  padding: 15px;
+}
+
+.data{
+  text-align: left;
+  width: fit-content;
+}
+
+.apiTitle{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
