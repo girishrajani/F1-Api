@@ -17,6 +17,9 @@ app.use('/drivers-championships',driversRoute);
 const teamsRoute = require('./routes/team-championship')
 app.use('/team-championships',teamsRoute);
 
+const seasonWiki = require('./routes/season-wiki')
+app.use('/season-wiki', seasonWiki);
+
 app.get('/', function(req, res) {
     res.render("index");
 });
