@@ -1,11 +1,14 @@
 # F1-API
 
 Open-Source Informational API for all the Motorsports Fans out there
+
+## This API is not hosted online anymore
+
 <center>
 <img src='./README assets/F1Logo.png' alt = 'F1 Logo' height='300' width='500'>
 </center>
 
-### This API is not hosted online anymore
+
 
 # EndPoints
 
